@@ -58,7 +58,7 @@ export async function generateMetadata(
 }
 
 export default async function PostPage({ params }: Props) {
-  const [post, settings] = await Promise.all([
+  const [post] = await Promise.all([
     sanityFetch<PostQueryResult>({
       query: postQuery,
       params,
@@ -73,12 +73,7 @@ export default async function PostPage({ params }: Props) {
   }
 
   return (
-    <div className="container mx-auto px-5">
-      <h2 className="mb-16 mt-10 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
-        <Link href="/" className="hover:underline">
-          {settings?.title || demo.title}
-        </Link>
-      </h2>
+    <div className="container mx-auto pt-8 bg-[#FFF4ED]">
       <article>
         <h1 className="text-balance mb-12 text-6xl font-bold leading-tight tracking-tighter md:text-7xl md:leading-none lg:text-8xl">
           {post.title}
@@ -110,10 +105,10 @@ export default async function PostPage({ params }: Props) {
           />
         )}
       </article>
-      <aside>
-        <hr className="border-accent-2 mb-24 mt-28" />
+      <aside className="">
+        <hr className="border-accent-2 mb-24 mt-28 " />
         <h2 className="mb-8 text-6xl font-bold leading-tight tracking-tighter md:text-7xl">
-          Recent Stories
+          Recent Blogs
         </h2>
         <Suspense>
           <MoreStories skip={post._id} limit={2} />
