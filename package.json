@@ -13,6 +13,8 @@
     "typegen": "sanity schema extract && sanity typegen generate"
   },
   "dependencies": {
+    "@cloudinary/react": "^1.13.0",
+    "@cloudinary/url-gen": "^1.19.0",
     "@sanity/assist": "3.0.3",
     "@sanity/icons": "2.11.8",
     "@sanity/image-url": "1.0.2",
@@ -24,6 +26,7 @@
     "@types/react-dom": "^18.2.25",
     "@vercel/speed-insights": "^1.0.10",
     "autoprefixer": "^10.4.19",
+    "cloudinary": "^2.2.0",
     "date-fns": "^3.6.0",
     "next": "latest",
     "next-sanity": "9.0.10",

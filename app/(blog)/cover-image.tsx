@@ -11,7 +11,7 @@ export default function CoverImage(props: CoverImageProps) {
   const { image: source, priority } = props;
   const image = source?.asset?._ref ? (
     <Image
-      className="h-auto w-full"
+      className="h-auto w-full "
       width={2000}
       height={1000}
       alt={source?.alt || ""}
@@ -24,7 +24,7 @@ export default function CoverImage(props: CoverImageProps) {
   );
 
   return (
-    <div className="shadow-md transition-shadow duration-200 group-hover:shadow-lg sm:mx-0">
+    <div className="shadow-md transition-shadow duration-200 group-hover:shadow-lg sm:mx-0 ">
       {image}
     </div>
   );

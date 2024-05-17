@@ -11,7 +11,6 @@ import { structureTool } from "sanity/structure";
 import { apiVersion, dataset, projectId, studioUrl } from "@/sanity/lib/api";
 import { locate } from "@/sanity/plugins/locate";
 import { pageStructure, singletonPlugin } from "@/sanity/plugins/settings";
-import { assistWithPresets } from "@/sanity/plugins/assist";
 import author from "@/sanity/schemas/documents/author";
 import post from "@/sanity/schemas/documents/post";
 import settings from "@/sanity/schemas/singletons/settings";
@@ -41,7 +40,6 @@ export default defineConfig({
     unsplashImageAsset(),
     // Sets up AI Assist with preset prompts
     // https://www.sanity.io/docs/ai-assist
-    assistWithPresets(),
     // Vision lets you query your content with GROQ in the studio
     // https://www.sanity.io/docs/the-vision-plugin
     process.env.NODE_ENV === "development" &&

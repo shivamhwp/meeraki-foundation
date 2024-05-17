@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import MoreStories from "@/app/(blog)/more-stories";
 
-export default async function Page() {
+export default function Page() {
   return (
     <div className="container mx-auto pt-8">
       <aside>
