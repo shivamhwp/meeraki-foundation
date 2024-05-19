@@ -20,6 +20,7 @@
     "@sanity/image-url": "1.0.2",
     "@sanity/preview-url-secret": "1.6.11",
     "@sanity/vision": "3.39.0",
+    "@sanity/visual-editing": "^1.8.21",
     "@tailwindcss/typography": "^0.5.12",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",
