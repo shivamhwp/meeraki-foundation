@@ -44,24 +44,20 @@ const navItems = [
     id: 1,
     name: "About us",
     url: "/about",
-    isActive: false,
   },
   {
     id: 2,
     name: "Our Impact",
     url: "/impact",
-    isActive: false,
   },
   {
     id: 3,
     name: "Volunteer with us",
     url: "/volunteer",
-    isActive: false,
   },
   {
     id: 4,
     name: "Blog",
     url: "/blog",
-    isActive: false,
   },
 ];

@@ -1,8 +1,12 @@
+import Image from "next/image";
 export default function About() {
   return (
     <div className="flex w-full h-full justify-between gap-16  max-md:flex-col pt-8 ">
       <div className=" xl:w-1/2 lg:w-1/2  min-md:w-full  ">
-        <img src="https://utfs.io/f/900468c7-245b-4ca6-a3c2-c3b2e34879d8-e1o8t0.jpg" />
+        <img
+          alt="what is meerkai"
+          src="https://utfs.io/f/900468c7-245b-4ca6-a3c2-c3b2e34879d8-e1o8t0.jpg"
+        />
       </div>
       <div className=" xl:w-1/2 lg:w-1/2  text-lg  md:w-full pb-16 ">
         Meeraki is a non-governmental organization committed to making a

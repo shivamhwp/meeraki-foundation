@@ -4,7 +4,6 @@
  */
 import { visionTool } from "@sanity/vision";
 import { PluginOptions, defineConfig } from "sanity";
-import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 import { presentationTool } from "sanity/presentation";
 import { structureTool } from "sanity/structure";
 
@@ -36,8 +35,7 @@ export default defineConfig({
     structureTool({ structure: pageStructure([settings]) }),
     // Configures the global "new document" button, and document actions, to suit the Settings document singleton
     singletonPlugin([settings.name]),
-    // Add an image asset source for Unsplash
-    unsplashImageAsset(),
+
     // Sets up AI Assist with preset prompts
     // https://www.sanity.io/docs/ai-assist
     // Vision lets you query your content with GROQ in the studio
