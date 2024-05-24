@@ -32,25 +32,13 @@ export const folders: Folder[] = [
   },
   {
     id: 5,
-    name: "orphanage-food-drive-1",
-    heading: "Orphanage Food Drive 1",
-    description: "Orphanage Food Drive 1",
-  },
-  {
-    id: 6,
-    name: "orphanage-food-donation-drive-2",
-    heading: "Orphanage Food Donation Drive 2",
-    description: "Orphanage Food Donation Drive 3",
-  },
-  {
-    id: 7,
-    name: "orphanage-food-donation-drive-3",
-    heading: "Orphanage Food Donation Drive 3",
-    description: "Orphanage Food Drive 1",
+    name: "orphanage-food-donation-drives",
+    heading: "Orphanage Food Donation Drives",
+    description: "Orphanage Food Donation Drives",
   },
 
   {
-    id: 8,
+    id: 6,
     name: "slum-education-drive",
     heading: "Slum Education Drive",
     description: "Slum Education Drive",

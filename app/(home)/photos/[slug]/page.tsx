@@ -31,7 +31,7 @@ export default async function PhotosPage({
 }: {
   params: { slug: string };
 }) {
-  const cachcedResults = cache(() => generateStaticParams({ params }));
+  // const cachcedResults = cache(() => generateStaticParams({ params }));
 
   const images = await generateStaticParams({ params });
 
