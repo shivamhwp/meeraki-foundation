@@ -6,7 +6,7 @@ const TopNav = () => {
   const path = usePathname();
 
   return (
-    <div className="text-black py-8 font-bold xl:text-2xl lg:text-xl text-lg flex h-24 justify-between items-center ">
+    <div className="text-black py-8 font-bold xl:text-2xl lg:text-xl text-lg  flex h-24 justify-between items-center ">
       <div>
         <Link href={"/"}>Meeraki Foundation</Link>
       </div>
@@ -52,8 +52,8 @@ const navItems = [
   },
   {
     id: 3,
-    name: "Volunteer with us",
-    url: "/volunteer",
+    name: "Volunteer",
+    url: "https://docs.google.com/forms/d/1CZv6ZwbXq3UdLvGXXFi5f3SI9wNTd2jqCtdsWIGW0Zw/viewform?edit_requested=true",
   },
   {
     id: 4,
