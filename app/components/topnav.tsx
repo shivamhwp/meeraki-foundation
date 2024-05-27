@@ -5,24 +5,42 @@ import { usePathname } from "next/navigation";
 import { HamIcon } from "./ham-icon";
 
 const TopNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [nav, setNav] = useState(false);
   const path = usePathname();
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
   return (
     <div className="text-black py-8 font-bold xl:text-2xl lg:text-xl text-lg  flex h-24 justify-between items-center ">
       <div className="flex gap-4 items-center justify-center">
         <div
-          className="min-md:hidden cursor-pointer"
+          className="xl:hidden lg:hidden md:hidden flex cursor-pointer"
           onClick={() => {
-            console.log("clicked");
-            setIsOpen(!isOpen);
+            handleNav();
           }}
         >
-          <HamIcon />
+          {nav ? "" : <HamIcon />}
+          <ul
+            className={
+              nav
+                ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-black bg-[#FFF4ED] ease-in-out duration-500"
+                : "ease-in-out w-[60%] duration-200 fixed top-0 bottom-0 left-[-100%]"
+            }
+          >
+            <h1 className="w-full text-2xl font-bold text-black m-4">← back</h1>
+            {navItems.map((item) => (
+              <Link href={item.url} key={item.id}>
+                <li className="p-4 border-b  hover:bg-[#EE7223] duration-300 hover:text-black cursor-pointer border-gray-600">
+                  {item.name}
+                </li>
+              </Link>
+            ))}
+          </ul>
         </div>
         <Link href={"/"}>Meeraki Foundation</Link>
       </div>
-      <div className="flex justify-center  items-center gap-4">
+      <div className="flex justify-center  items-center gap-4 ">
         <div className="flex gap-4 h-full w-full justify-center items-center ">
           {navItems.map((item) => (
             <div

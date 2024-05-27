@@ -1,6 +1,6 @@
 export const HamIcon = () => {
   return (
-    <div className="min-lg:hidden">
+    <div className="xl:hidden lg:hidden md:hidden cursor-pointer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

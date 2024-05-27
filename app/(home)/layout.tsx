@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" className="bg-[#FFF4ED]">
       <body className={inter.className}>
         {draftMode().isEnabled && <VisualEditing />}
-        <div className="bg-[#FFF4ED] xl:px-24 lg:px-20 p-4 md:px-12 w-screen flex flex-col h-screen">
+        <div className="bg-[#FFF4ED] xl:px-24 lg:px-20 px-4 md:px-12 w-screen flex flex-col h-screen">
           <TopNav />
           {children}
         </div>
