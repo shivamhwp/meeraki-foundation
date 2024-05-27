@@ -1,7 +1,6 @@
-import Image from "next/image";
 export default function About() {
   return (
-    <div className="flex w-full h-full justify-between gap-16  max-md:flex-col pt-8 ">
+    <div className="flex w-full h-full justify-between gap-16  max-md:flex-col pt-8 min-lg:flex-col">
       <div className=" xl:w-1/2 lg:w-1/2  min-md:w-full  ">
         <img
           alt="what is meerkai"

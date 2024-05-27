@@ -1,33 +1,44 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { HamIcon } from "./ham-icon";
 
 const TopNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const path = usePathname();
 
   return (
     <div className="text-black py-8 font-bold xl:text-2xl lg:text-xl text-lg  flex h-24 justify-between items-center ">
-      <div>
+      <div className="flex gap-4 items-center justify-center">
+        <div
+          className="min-md:hidden cursor-pointer"
+          onClick={() => {
+            console.log("clicked");
+            setIsOpen(!isOpen);
+          }}
+        >
+          <HamIcon />
+        </div>
         <Link href={"/"}>Meeraki Foundation</Link>
       </div>
       <div className="flex justify-center  items-center gap-4">
         <div className="flex gap-4 h-full w-full justify-center items-center ">
           {navItems.map((item) => (
-            <div key={item.id} className="hover:text-[#EE7223] cursor-pointer">
+            <div
+              key={item.id}
+              className="hover:text-[#EE7223] cursor-pointer max-sm:hidden max-md:hidden"
+            >
               <Link
                 href={item.url}
                 className={path === `${item.url}` ? "text-[#EE7223]" : ""}
               >
-                {" "}
                 {item.name}
               </Link>
             </div>
           ))}
           <div className="rounded-full  border-[#524c42] border   bg-black text-[#E2DFD0] px-4 py-2.5 hover:text-black hover:bg-[#FFF4ED] hover:cursor-pointer ">
-            <Link
-              href="https://buy.stripe.com/test_cN25m912d1W5eje8ww"
-              target="_blank"
-            >
+            <Link href="" target="_blank">
               Donate
             </Link>
           </div>
@@ -36,8 +47,6 @@ const TopNav = () => {
     </div>
   );
 };
-
-export default TopNav;
 
 const navItems = [
   {
@@ -61,3 +70,4 @@ const navItems = [
     url: "/blog",
   },
 ];
+export default TopNav;

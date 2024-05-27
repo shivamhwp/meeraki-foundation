@@ -8,7 +8,7 @@ export function ImageGrid({ images }: { images: SearchResult[] }) {
     return images.filter((resource, idx) => idx % MAX_COLUMNS === colIndex);
   }
   return (
-    <div className="grid grid-cols-4 gap-4 xl:pb-10">
+    <div className="grid lg:grid-cols-3 xl:grid-cols-4 grid-col-2 md:grid-cols-3 gap-4 xl:pb-10">
       {[
         getColumns(0),
         getColumns(1),
