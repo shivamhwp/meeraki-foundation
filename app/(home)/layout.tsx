@@ -1,6 +1,7 @@
 import "../globals.css";
 import { Inter } from "next/font/google";
 import TopNav from "../components/topnav";
+import type { Metadata } from "next";
 import { draftMode } from "next/headers";
 import { VisualEditing } from "next-sanity";
 const inter = Inter({
@@ -8,6 +9,12 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
+
+export const metadata: Metadata = {
+  title: "Meeraki Foundation",
+  description: "Meeraki Foundation is a non-profit organization.",
+};
+<link rel="icon" href="/favicon.ico" sizes="any" />;
 
 export default function RootLayout({
   children,
