@@ -15,6 +15,7 @@
   "dependencies": {
     "@cloudinary/react": "^1.13.0",
     "@cloudinary/url-gen": "^1.19.0",
+    "@radix-ui/react-slot": "^1.0.2",
     "@sanity/icons": "2.11.8",
     "@sanity/image-url": "1.0.2",
     "@sanity/preview-url-secret": "1.6.11",
@@ -25,9 +26,13 @@
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
     "autoprefixer": "^10.4.19",
+    "class-variance-authority": "^0.7.0",
     "cloudinary": "^2.2.0",
+    "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
-    "next": "latest",
+    "embla-carousel-react": "^8.1.4",
+    "lucide-react": "^0.394.0",
+    "next": "^14.2.3",
     "next-cloudinary": "^6.5.2",
     "next-sanity": "9.0.10",
     "postcss": "^8.4.38",
@@ -37,7 +42,9 @@
     "sanity": "3.39.0",
     "server-only": "^0.0.1",
     "styled-components": "6.1.8",
+    "tailwind-merge": "^2.3.0",
     "tailwindcss": "^3.4.3",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "5.4.5"
   },
   "devDependencies": {

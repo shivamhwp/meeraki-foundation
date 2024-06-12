@@ -13,8 +13,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Meeraki Foundation",
   description: "Meeraki Foundation is a non-profit organization.",
+  icons: "https://utfs.io/f/d27a0c8f-11ba-4820-8f25-66d05de2aeb5-hru0oc.ico",
 };
-<link rel="icon" href="/favicon.ico" sizes="any" />;
 
 export default function RootLayout({
   children,

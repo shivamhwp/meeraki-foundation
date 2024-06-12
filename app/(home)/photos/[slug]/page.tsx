@@ -1,6 +1,5 @@
 import { ImageGrid } from "@/app/components/image-grid";
 import cloudinary from "cloudinary";
-import { cache } from "react";
 
 export type SearchResult = {
   public_id: string;
@@ -35,7 +34,7 @@ export default async function PhotosPage({
 
   return (
     <div className="xl:pt-2">
-      <h1 className="text-4xl font-bold pb-6">{params.slug}</h1>
+      <h1 className="text-4xl font-bold pb-6">{params.slug.toUpperCase()}</h1>
 
       {images ? (
         <ImageGrid images={images} />

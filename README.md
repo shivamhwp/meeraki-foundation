@@ -1,9 +1,12 @@
 ## todo
 
 - [x] sanity setup
-- [-] cloudinary setup{ you should add caching}
+- [x] cloudinary setup{ you should add caching}
 - [x] setting up volunteer form( going with google forms so its easy to manage for the team)
-- [ ] respoonsive design
-- [ ] make the home page
-- [ ] make the footer
-- [ ] add cahing to images on impact page
+- [x] respoonsive design
+- [x] make the home page
+- [x] make the footer
+- [ ] add caching to images
+- [ ] fixing loading states.
+- [ ] hosting sanity studio on a hosted url
+- [ ] going through code and removing the extra stuff

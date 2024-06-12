@@ -3,7 +3,6 @@
  * and query draft content and preview the content as it will appear once everything is published
  */
 
-import cloudinary from "cloudinary";
 import { validatePreviewUrl } from "@sanity/preview-url-secret";
 import { draftMode } from "next/headers";
 import { redirect } from "next/navigation";

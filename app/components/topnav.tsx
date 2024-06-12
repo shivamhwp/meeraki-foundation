@@ -12,7 +12,7 @@ const TopNav = () => {
   };
 
   return (
-    <div className="text-black py-8 font-bold xl:text-2xl lg:text-xl text-lg  flex h-24 justify-between items-center ">
+    <div className="text-black py-8 font-bold xl:text-2xl lg:text-xl text-lg flex h-24 justify-between z-50 items-center ">
       <div className="flex gap-4 items-center justify-center">
         <div
           className="xl:hidden lg:hidden md:hidden flex cursor-pointer"
@@ -80,7 +80,7 @@ const navItems = [
   {
     id: 3,
     name: "Volunteer",
-    url: "https://docs.google.com/forms/d/1CZv6ZwbXq3UdLvGXXFi5f3SI9wNTd2jqCtdsWIGW0Zw/viewform?edit_requested=true",
+    url: "https://docs.google.com/forms/d/1CZv6ZwbXq3UdLvGXXFi5f3SI9wNTd2jqCtdsWIGW0Zw",
   },
   {
     id: 4,
