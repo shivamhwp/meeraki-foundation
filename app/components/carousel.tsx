@@ -19,10 +19,13 @@ function HomeCarousel() {
         <CarouselContent>
           {CarouselItems.map((item) => {
             return (
-              <CarouselItem key={item.id} className="hover:opacity-80">
+              <CarouselItem
+                key={item.id}
+                className="hover:opacity-80 justify-center items-center flex"
+              >
                 <Link
                   href={item.eventLink}
-                  className=" flex hover:cursor-pointer max-md:flex-col-reverse w-full items-center justify-center max-md:py-6 max-md:gap-6"
+                  className=" flex hover:cursor-pointer max-md:flex-col-reverse w-full items-center justify-center max-md:py-6  max-md:gap-6"
                 >
                   <CloudinaryImage
                     src={item.imagePublicId}
@@ -32,11 +35,11 @@ function HomeCarousel() {
                     alt="lovely people"
                     className="rounded-lg object-contain w-1/2 max-md:w-full h-full min-md:pl-4"
                   />
-                  <div className="w-1/2 flex flex-col items-center justify-center gap-8   text-[#fff4ed] ">
-                    <div className="text-4xl lg:text-3xl font-bold text-center text-[#EE7223]">
+                  <div className="w-1/2 flex flex-col items-center justify-center gap-8 text-[#fff4ed] ">
+                    <div className="text-4xl lg:text-3xl font-bold text-center text-[#EE7223] max-sm:line-clamp-3  ">
                       {item.name}
                     </div>
-                    <div className="text-2xl lg:text-xl px-4 text-center max-md:hidden">
+                    <div className="text-2xl lg:text-xl px-4 text-center max-md:hidden ">
                       {item.descripton}
                     </div>
                   </div>
