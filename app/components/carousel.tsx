@@ -11,11 +11,11 @@ import { CarouselItems } from "../utils/data";
 
 function HomeCarousel() {
   return (
-    <div className="flex max-lg:flex-col  items-center justify-center xl:w-full lg:w-full ">
+    <div className="flex max-lg:flex-col  items-center justify-center w-full">
       <div className="text-6xl w-1/3 items-center flex justify-center font-bold max-md:pb-6">
         Events
       </div>
-      <Carousel className="w-2/3 flex max-lg:p-4  bg-black rounded-lg ">
+      <Carousel className="w-2/3 flex max-lg:w-full  max-lg:p-4  bg-black rounded-lg ">
         <CarouselContent>
           {CarouselItems.map((item) => {
             return (
@@ -30,9 +30,9 @@ function HomeCarousel() {
                     width="400"
                     sizes="100vw"
                     alt="lovely people"
-                    className="rounded-lg object-contain w-1/2 h-full min-md:pl-4"
+                    className="rounded-lg object-contain w-1/2 max-md:w-full h-full min-md:pl-4"
                   />
-                  <div className="w-1/2 flex flex-col items-center justify-center gap-8  text-[#fff4ed] ">
+                  <div className="w-1/2 flex flex-col items-center justify-center gap-8   text-[#fff4ed] ">
                     <div className="text-4xl lg:text-3xl font-bold text-center text-[#EE7223]">
                       {item.name}
                     </div>
@@ -45,8 +45,8 @@ function HomeCarousel() {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className=" max-md:hidden" />
+        <CarouselNext className="max-md:hidden" />
       </Carousel>
     </div>
   );
