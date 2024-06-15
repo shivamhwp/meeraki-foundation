@@ -6,7 +6,7 @@
 - [x] respoonsive design
 - [x] make the home page
 - [x] make the footer.
-- [ ] fixing loading states.
+- [x] fixing loading states. ( using generatestaticparams, no specific need for it at the moment).
 - [ ] add caching to images
 - [ ] hosting sanity studio on a hosted url
 - [ ] going through code and removing the extra stuff

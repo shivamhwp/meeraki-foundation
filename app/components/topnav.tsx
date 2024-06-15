@@ -55,7 +55,7 @@ const TopNav = () => {
               </Link>
             </div>
           ))}
-          <div className="rounded-full  border-[#524c42] border   bg-black text-[#E2DFD0] px-4 py-2.5 hover:text-black hover:bg-[#FFF4ED] hover:cursor-pointer ">
+          <div className="rounded-full  border-[#524c42] hover:border   bg-[#EE7223] text-white px-4 py-2.5 hover:text-black hover:bg-[#FFF4ED] hover:cursor-pointer ">
             <Link href="" target="_blank">
               Donate
             </Link>
@@ -86,6 +86,11 @@ const navItems = [
     id: 4,
     name: "Blog",
     url: "/blog",
+  },
+  {
+    id: 5,
+    name: "Upcoming Events",
+    url: "/upcoming-events",
   },
 ];
 export default TopNav;

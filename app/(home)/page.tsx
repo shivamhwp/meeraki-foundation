@@ -8,6 +8,7 @@ function Home() {
       <HeroSection />
       <OurStory />
       <HomeCarousel />
+      <NarrativeComponent />
       <CelebrateComponent />
       <Footer />
     </div>
@@ -19,13 +20,12 @@ export default Home;
 function HeroSection() {
   return (
     <div className="w-full xl:h-full pt-8 flex max-sm:flex-col-reverse z-0">
-      <div className="xl:w-1/3 lg:w-1/3 w-full flex flex-col h-auto gap-8 xl:pt-8">
-        <div className="xl:text-6xl md:text-3xl text-2xl max-sm:pt-4 font-bold max-sm:flex max-sm:w-full max-sm:items-center max-sm:justify-center max-sm:text-center">
-          For <br />
-          tomorrow&apos;s future.
+      <div className="xl:w-1/3 lg:w-1/3 w-full flex flex-col h-auto gap-16 xl:pt-8">
+        <div className="xl:text-7xl md:text-3xl text-2xl max-sm:pt-4 font-bold max-sm:flex max-sm:w-full max-sm:items-center max-sm:justify-center max-sm:text-center">
+          Passion in Action...
         </div>
         <Link
-          className="rounded-full xl:text-lg border-[#524c42] border  font-medium  flex items-center justify-center max-sm:w-full w-64 h-16 bg-black text-[#E2DFD0] px-6 py-4 hover:text-black hover:bg-[#FFF4ED] hover:cursor-pointer"
+          className="rounded-full xl:text-lg border-[#524c42] hover:border  font-medium  flex items-center justify-center max-sm:w-full w-64 h-16 bg-[#EE7223] text-white px-6 py-4 hover:text-black hover:bg-[#FFF4ED] hover:cursor-pointer"
           href="https://docs.google.com/forms/d/1CZv6ZwbXq3UdLvGXXFi5f3SI9wNTd2jqCtdsWIGW0Zw/viewform"
           target="_blank"
         >
@@ -50,27 +50,45 @@ function HeroSection() {
 
 function OurStory() {
   return (
-    <div className=" h-auto p-8 max-sm:p-2  bg-black w-full rounded-xl flex gap-4 max-sm:flex-col">
-      <div className="text-6xl  text-[#EE7223] font-bold w-1/3 max-sm:w-full flex items-center max-sm:pt-4 justify-center">
+    <div className=" h-auto p-10 max-sm:p-2  bg-transparent  shadow-xl hover:shadow-2xl w-full rounded-xl flex gap-4 max-sm:flex-col border-l-4 border-[#FF8A43] lg:hover:border-l-8 xl:hover:border-l-8 ">
+      <div className="text-6xl  text-black font-bold w-1/3 max-sm:w-full flex items-center max-sm:pt-4 justify-center">
         Our Story
       </div>
-      <div className="w-2/3 max-sm:w-full text-[#FFF4ED] px-2 max-sm:text-center max-sm:text-ellipsis ">
-        Meeraki was born ten years ago, during one of those afternoons when you
-        feel like you can achieve anything you set your mind to. The world. We
-        all went along with our lives, stuck in an endless rat-race. Ten years
-        passed by. Why come back to it now, you ask? Because Meeraki brings us
-        solace. Because we knew no matter where we ended up, Meeraki was always
-        there for us to come back to. It was here to stay. We bonded over our
-        resolve to give back to our society, to contribute to its betterment.
-        Against all odds, we manifested our dream into reality today. Getting it
-        registered was a feat in itself, but running Meeraki is another ballgame
-        altogether. It isn&apos;t going to be easy. But here we are anyway. Our
-        purpose is not solely defined by the magnitude of the impact but by the
-        intention and commitment we bring to our endeavors. We believe even the
-        smallest gestures can spark inspiration, spread kindness, or offer
-        support, ultimately making a difference in someone&apos;s life or in the
-        world at large. If our efforts have made even the smallest positive
-        impact, our purpose is fulfilled.
+      <div className="w-2/3 max-sm:w-full text-black px-2 max-sm:text-center max-sm:text-ellipsis text-justify">
+        <span>
+          Ten years ago, in a classroom tucked away in the corner of our high
+          school, we found ourselves deeply engrossed in a discussion. We talked
+          about the disparities around the globe, the urgent problems of
+          poverty, ignorance, and environmental destruction. Each of us felt a
+          sense of responsibility, a desire to make a difference beyond our own
+          lives. As we delved deeper into our conversation, an idea began to
+          take shape—an idea that would later blossom into something far greater
+          than we could have ever imagined. We dreamed of creating an
+          organization that would address these issues head-on, an NGO that
+          would bring hope and change to communities in need. Treaties were
+          drawn, promises made. We eventually graduated high school and went
+          down our own separate paths, but idea of Meeraki always brought us
+          back together. With time, we grew sceptical, but we were unwilling to
+          let go of our ‘childish dream’.
+        </span>{" "}
+        <br />
+        <span className=" flex pt-2">
+          The previous ten years were marked by cynicism as we battled our own
+          anxieties and concerns, questioning whether we actually had it in us
+          to make a difference in the world. Slowly but surely, our vision began
+          to take shape. We organized fundraisers, volunteered in our
+          communities, and sought out like-minded individuals. We were small,
+          but we were determined. And then, after a decade of perseverence, our
+          dream finally became a reality. We formally estb. our non-governmental
+          organization, introducing initiatives to combat poverty, advance
+          education, and safeguard the environment. Although our path had been
+          difficult and drawn out, it had also been immensely fulfilling. As we
+          stand together now, we know that our journey has only just begun.
+          There are still many challenges ahead, still many lives to impact. But
+          armed with our passion, our resilience, and our unwavering belief in
+          the power of collective action, we are ready to face whatever the
+          future holds.
+        </span>
       </div>
     </div>
   );
@@ -86,6 +104,19 @@ function CelebrateComponent() {
       >
         Celebrate your birthday with us 🎉 ↗
       </Link>
+    </div>
+  );
+}
+
+function NarrativeComponent() {
+  return (
+    <div className="flex max-sm:flex-col items-center gap-8 w-full shadow-xl hover:shadow-2xl xl:border-l-4 lg:border-l-4 max-sm:py-4 border-[#FF8A43] lg:hover:border-l-8 xl:hover:border-l-8 rounded-lg">
+      <div className="w-1/2 max-sm:h-auto max-sm:w-full xl:text-7xl lg:text-6xl md:text-5xl text-4xl font-bold text-center">
+        The Meeraki <br /> Narrative !
+      </div>
+      <div className="w-1/2 max-sm:h-auto max-sm:w-full">
+        <img src="https://utfs.io/f/bca3a270-821c-409c-9e41-4b35f6f0622a-8ur9b.23.41.jpeg" />
+      </div>
     </div>
   );
 }
