@@ -6,6 +6,11 @@ function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-auto z-0 gap-16  bg-fixed">
       <HeroSection />
+      <img
+        className="flex rounded-lg"
+        src="https://res.cloudinary.com/detk4gyj1/image/upload/v1718492736/illus-1_x9mtyi.png"
+        alt="the illustration"
+      />
       <OurStory />
       <HomeCarousel />
       <NarrativeComponent />
@@ -19,7 +24,7 @@ export default Home;
 
 function HeroSection() {
   return (
-    <div className="w-full xl:h-full pt-8 flex max-sm:flex-col-reverse z-0">
+    <div className="w-full  pt-8 flex max-sm:flex-col-reverse z-0">
       <div className="xl:w-1/3 lg:w-1/3 w-full flex flex-col h-auto gap-16 xl:pt-8">
         <div className="xl:text-7xl md:text-3xl text-2xl max-sm:pt-4 font-bold max-sm:flex max-sm:w-full max-sm:items-center max-sm:justify-center max-sm:text-center">
           Passion in Action...
@@ -115,7 +120,10 @@ function NarrativeComponent() {
         The Meeraki <br /> Narrative !
       </div>
       <div className="w-1/2 max-sm:h-auto max-sm:w-full">
-        <img src="https://utfs.io/f/bca3a270-821c-409c-9e41-4b35f6f0622a-8ur9b.23.41.jpeg" />
+        <img
+          alt="the narrative image"
+          src="https://utfs.io/f/bca3a270-821c-409c-9e41-4b35f6f0622a-8ur9b.23.41.jpeg"
+        />
       </div>
     </div>
   );

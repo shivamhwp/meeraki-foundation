@@ -38,14 +38,20 @@ const TopNav = () => {
             ))}
           </ul>
         </div>
-        <Link href={"/"}>Meeraki Foundation</Link>
+        <Link href={"/"}>
+          <img
+            className="cursor-pointer flex w-96  "
+            src="https://utfs.io/f/76b53499-75f6-4c55-8afc-47f3a51f5dd1-h44821.jpeg"
+            alt="logo"
+          />
+        </Link>
       </div>
       <div className="flex justify-center  items-center gap-4 ">
         <div className="flex gap-4 h-full w-full justify-center items-center ">
           {navItems.map((item) => (
             <div
               key={item.id}
-              className="hover:text-[#EE7223] cursor-pointer max-sm:hidden max-md:hidden"
+              className="hover:text-[#EE7223] cursor-pointer max-sm:hidden max-md:hidden "
             >
               <Link
                 href={item.url}

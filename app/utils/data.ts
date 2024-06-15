@@ -103,7 +103,7 @@ export const CarouselItems: CarouselItem[] = [
       "our recent efforts have profoundly touched the lives of many, bringing warmth, hope, and love to those in need. Our food donation drives have been a beacon of joy, where we reached out to children in orphanages, providing them with nourishing meals and moments of genuine happiness.",
   },
   {
-    id: 5,
+    id: 6,
     name: "Slum Education Drive",
     imagePublicId: "/slum-education-drive/IMG_5568_xidk5q",
     eventLink: "photos/slum-education-drive",
