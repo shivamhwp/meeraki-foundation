@@ -4,11 +4,11 @@
  */
 
 import { PluginOptions, defineConfig } from "sanity";
-import { presentationTool } from "sanity/presentation";
+// import { presentationTool } from "sanity/presentation";
 import { structureTool } from "sanity/structure";
 
 import { dataset, projectId, studioUrl } from "@/sanity/lib/api";
-import { locate } from "@/sanity/plugins/locate";
+// import { locate } from "@/sanity/plugins/locate";
 import { pageStructure, singletonPlugin } from "@/sanity/plugins/settings";
 import author from "@/sanity/schemas/documents/author";
 import post from "@/sanity/schemas/documents/post";
@@ -28,10 +28,6 @@ export default defineConfig({
     ],
   },
   plugins: [
-    presentationTool({
-      locate,
-      previewUrl: { previewMode: { enable: "/api/draft" } },
-    }),
     structureTool({ structure: pageStructure([settings]) }),
     // Configures the global "new document" button, and document actions, to suit the Settings document singleton
     singletonPlugin([settings.name]),
